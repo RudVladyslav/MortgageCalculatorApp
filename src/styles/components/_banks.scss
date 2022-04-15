@@ -1,0 +1,94 @@
+@import "../variables";
+
+.bank-item{
+  padding:30px ;
+  display: flex;
+  align-items: center;
+  border: 1px solid $primary;
+  border-radius: 20px;
+  width: 70%;
+  &__name, &__info{
+    display: flex;
+    width: 50%;
+      font-size: 18px;
+    justify-content: center;
+  }
+  &__info{
+    flex-direction: column;
+    p+p{
+      margin-top: 5px;
+
+    }
+    span{
+      font-weight: 700;
+    }
+  }
+}
+
+.add-button{
+  background-color: $primary;
+  color:$secondary;
+  outline: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+  &:hover{
+    background-color:$secondary ;
+    color: $primary;
+    transition: .2s;
+    outline: 1px solid $primary;
+  }
+}
+
+.btn+.btn{
+  margin-top: 20px;
+}
+
+.btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-edit{
+  background-color: $warning;
+  color: $secondary;
+  transition: .2s;
+  &:hover{
+    transition: .2s;
+    background-color: $secondary;
+    color: $warning;
+  }
+}
+.btn-delete{
+  background-color: $danger;
+  color: $secondary;
+  transition: .2s;
+  &:hover{
+    transition: .2s;
+    background-color: $secondary;
+    color:$danger;
+  }
+}
+
+.banks-wrapper{
+  padding: 30px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bank-item +.bank-item{
+  margin-top: 50px;
+}
+
+.add-button{
+  margin-bottom: 30px;
+}
+
+

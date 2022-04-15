@@ -1,0 +1,33 @@
+@import "../variables";
+
+header{
+  padding: 20px;
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $secondary;
+}
+
+.header-title__text{
+  color: $secondary;
+}
+
+.header-links{
+  display: flex;
+  &__item + &__item{
+    margin-left: 20px;
+  }
+  &__text{
+    color: $secondary;
+    opacity: 0.8;
+  }
+  &__text:hover{
+    text-decoration: underline;
+    opacity: 1;
+  }
+  &__text.active{
+    opacity: 1;
+    color: $secondary;
+  }
+}
